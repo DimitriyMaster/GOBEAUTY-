@@ -832,13 +832,14 @@ body::after {
 }
 .location-preview-main__slider {
   position: relative;
-  aspect-ratio: 1020/620;
+  width: 100%;
+  height: 100%;
   overflow: hidden
 }
 .location-preview-main__slider img {
   width: 100%;
-  -o-object-fit: contain;
-  object-fit: contain
+  -o-object-fit: cover;
+  object-fit: cover
 }
 .swiper {
   width: 100%;
@@ -859,7 +860,7 @@ body::after {
   width: 2.5rem;
   height: 2.5rem;
   border-radius: 50%;
-  color: #333;
+  color: #000;
   transition: all .3s ease;
   z-index: 10;
   cursor: pointer
@@ -869,6 +870,10 @@ body::after {
   height: 100%;
   width: 100%;
   fill: #fff;
+  border-radius: 50%;
+  border: 2px solid var(--bg-accent);
+  background-color: #d3d3d3;
+  box-shadow: inset 0 0 10px rgba(0,0,0,.5);
   transition: all .3s ease
 }
 .swiper-button-next::after,
@@ -876,10 +881,10 @@ body::after {
   display: none
 }
 .swiper-button-prev {
-  right: 1.5625rem
+  right: .0625rem
 }
 .swiper-button-next {
-  left: 1.5625rem;
+  left: .0625rem;
   right: auto;
   -webkit-transform: rotate(180deg);
   transform: rotate(180deg)
@@ -1358,13 +1363,8 @@ body::after {
   .collaboration__container {
     grid-template-columns: auto
   }
-  .swiper-button-prev {
-    right: -.3125rem;
-    top: 3.125%rem
-  }
   .swiper-button-next {
-    left: -.3125rem;
-    top: 45%
+    top: 47%
   }
 }
 @media (max-width:47.99875em)and (any-hover:none) {
@@ -1391,9 +1391,6 @@ body::after {
   .collaboration__title {
     line-height: normal;
     margin-bottom: .625rem
-  }
-  .swiper-button-next {
-    top: 43%
   }
 }
 @media (min-width:20em)and (max-width:91.875em) {
@@ -1567,7 +1564,7 @@ body::after {
   }
   .swiper-button-next img:hover,
   .swiper-button-prev img:hover {
-    box-shadow: 0 0 .3125rem rgba(153,73,146,.7215686275);
+    box-shadow: 0 0 .3125rem #fff;
     border-radius: 50%
   }
   .location-preview-thumbs__slide img:hover {
