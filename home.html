@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>GOUBEAUTY STUDIOS</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20250808225344">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<div class="header__menu menu">
+					<button type="button" class="menu__icon icon-menu"><span></span></button>
+					<nav class="menu__body">
+						<ul class="menu__list">
+							<li class="menu__item">
+								<a href="#Головна" data-goto-header data-goto=".main-block" class="menu__link">Головна</a>
+							</li>
+							<li class="menu__item">
+								<a href="#Про нас" data-goto-header data-goto=".features" class="menu__link">Про нас
+								</a>
+							</li>
+							<li class="menu__item">
+								<a href="#Локації" data-goto-header data-goto=".location-preview" class="menu__link">Локації</a>
+							</li>
+							<li class="menu__item">
+								<a href="#Контакти" data-goto-footer data-goto=".footer__container" class="menu__link">Контакти</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+				<div class="header__actions">
+					<a href="tel:+380502550192" class="header__phone">
+						<img src="img/icons/phone.svg" alt="Phone icon">
+						<span class="header__phone-text">+380502550192</span>
+					</a>
+				</div>
+			</div>
+		</header>
+		<main class="page">
+			<section class="page__main main-block">
+				<div class="main-block__container">
+					<div class="main-block__image">
+						<img src="img/main/maine_image.webp" alt="Main image">
+					</div>
+					<div class="main-block__content">
+						<h1 class="main-block__title">GOBEAUTY</h1>
+						<div class="main-block__subtitle">STUDIOS</div>
+						<div class="main-block__text">
+							Розвивай свій бізнес у нашій студії в Запоріжжі
+						</div>
+						<div class="main-block__descriptions">
+							<p>Комфорт для клієнтів, впевненість для майстрів.</p>
+						</div>
+					</div>
+					<button data-popup="#popup" type="submit" class="main-block__button button button--wight"><span>Записатися</span>
+						<img src="img/icons/button_arow.svg" alt="Image arrow">
+					</button>
+				</div>
+				<div class="main-block__decor"></div>
+			</section>
+			<section class="page__features features">
+				<div class="features__container">
+					<h2 class="features__title">Чому майстри обирають саме нас?</h2>
+					<div class="features__items">
+						<div class="features__column features__column_1">
+							<div class="features__item item-features">
+								<div class="item-features__icon">
+									<img src="img/features/guards.svg" alt="Image guard icon">
+								</div>
+								<div class="item-features__subtitle">Безпечне робоче місце</div>
+								<div class="item-features__text">
+									<p>Камери відеоспостреження</p>
+									<p>Інвертори в кожній локації</p>
+									<p>Охорона кожного кабінету</p>
+								</div>
+							</div>
+						</div>
+						<div class="features__column features__column_2">
+							<div class="features__item item-features">
+								<div class="item-features__icon">
+									<img src="img/features/comfort.svg" alt="Image guard icon">
+								</div>
+								<div class="item-features__subtitle">Комфорт</div>
+								<div class="item-features__text">
+									<p>Обладнання та меблі для всіх послуг</p>
+									<p>Швидкісний WiFi</p>
+									<p>Комунальні послуги</p>
+								</div>
+							</div>
+						</div>
+						<div class="features__column features__column_3">
+							<div class="features__item item-features">
+								<div class="item-features__icon">
+									<img src="img/features/individuals.svg" alt="Image guard icon">
+								</div>
+								<div class="item-features__subtitle">Індивідуальна студія</div>
+								<div class="item-features__text">
+									<p>Простір закріплений лише за вами</p>
+									<p>Можливість розвивати особистий бренд</p>
+									<p>Підтримка менеджера з технічних питань</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="page__collaboration collaboration">
+				<div class="collaboration__container">
+					<div class="collaboration__content">
+						<h3 class="collaboration__title">Умови співпраці</h3>
+						<ul class="collaboration__list">
+							<li class="collaboration__text">- Підписання договору (ФОП або Юридична особа)</li>
+							<li class="collaboration__text">- Внесення оплати на наступний місяць</li>
+							<li class="collaboration__text">- Інструктаж по правилам пожежної безпеки і роботи в приміщеннях
+							</li>
+						</ul>
+					</div>
+					<div class="collaboration__form">
+						<form action="files/sendmail/sendmail.php" method="POST" class="contacts__form">
+							<h2 class="form__title">ЗАЛИШИТИ ЗАЯВКУ</h2>
+							<div class="form__item">
+								<input data-required autocomplete="name" type="text" name="Ім'я" data-error="Введіть ім'я" data-required placeholder="Ім'я" class="form__input">
+							</div>
+							<div class="form__item">
+								<input autocomplete="tel" type="tel" name="phone" data-error="Error" data-required="Phone" inputmode="numeric" placeholder="+38 (__) __ _ _" class="form__input">
+							</div>
+							<div class="form__item">
+								<select name="location" required class="form__select">
+									<option value="" disabled selected>Локація салону</option>
+									<option value="peremohy">пр-т Перемоги, 63</option>
+									<option value="polyakova">вул. Полякова, 21</option>
+									<option value="patriotychna">вул. Патріотична, 54</option>
+								</select>
+							</div>
+							<div class="form__item">
+								<button type="submit" class="form__button button button--send">
+									Відправити
+								</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</section>
+			<section class="page__location-previwe location-preview">
+				<div class="location-preview__container">
+					<div class="location-preview__header">
+						<h2 class="location-preview__title">Локації наших салонів</h2>
+						<p class="location-preview__subtitle">
+							Оберіть найбільш зручну для Вас локацію
+						</p>
+					</div>
+					<!-- Оболонка слайдера -->
+					<div class="location-preview-main__slider swiper">
+						<!-- Частина слайдера, що рухається -->
+						<div class="location-preview__wrapper swiper-wrapper">
+							<!-- Слайд -->
+							<div class="location-preview__slide swiper-slide">
+								<div class="swiper-zoom-container">
+									<img src="img/sliders-location/peremohy/peremohi_main.webp" alt="Інтер'єр салону на проспекті Перемоги, 63">
+								</div>
+							</div>
+							<div class="location-preview__slide swiper-slide">
+								<div class="swiper-zoom-container">
+									<img src="img/sliders-location/peremohy/peremohy-02.webp" alt="Інтер'єр салону на проспекті Перемоги, 63">
+								</div>
+							</div>
+							<div class="location-preview__slide swiper-slide">
+								<div class="swiper-zoom-container"><img src="img/sliders-location/peremohy/peremohy-03.webp" alt="Інтер'єр салону на проспекті Перемоги, 63"></div>
+							</div>
+							<div class="location-preview__slide swiper-slide">
+								<div class="swiper-zoom-container"><img src="img/sliders-location/peremohy/peremohy-04.webp" alt="Інтер'єр салону на проспекті Перемоги, 63"></div>
+							</div>
+							<div class="location-preview__slide swiper-slide">
+								<div class="swiper-zoom-container"><img src="img/sliders-location/peremohy/peremohy-05.webp" alt="Інтер'єр салону на проспекті Перемоги, 63"></div>
+							</div>
+							<div class="location-preview__slide swiper-slide">
+								<div class="swiper-zoom-container"><img src="img/sliders-location/peremohy/peremohy-06.webp" alt="Інтер'єр салону на проспекті Перемоги, 63"></div>
+							</div>
+							<div class="location-preview__slide swiper-slide">
+								<div class="swiper-zoom-container"><img src="img/sliders-location/peremohy/peremohy-06.webp" alt="Інтер'єр салону на проспекті Перемоги, 63"></div>
+							</div>
+						</div>
+
+						<button type="button" class="location-preview-main swiper-button-prev">
+							<img class="location-preview-main__icon" src="img/icons/arow-right.svg" alt="Arrow image">
+						</button>
+						<button type="button" class="location-preview-main swiper-button-next">
+							<img class="location-preview-main__icon" src="img/icons/arow-right.svg" alt="Arrow image">
+						</button>
+					</div>
+					<div thumbs-swiper="location-preview-main__slider swiper" class="location-preview-thumbs__slider swiper">
+						<!-- Частина слайдера, що рухається -->
+						<div class="location-preview-thumbs__wrapper swiper-wrapper">
+							<!-- Слайд -->
+
+							<div class="location-preview-thumbs__slide swiper-slide">
+								<img src="img/sliders-location/peremohy/peremohi_main.webp" alt="Інтер'єр салону на проспекті Перемоги, 63">
+							</div>
+							<div class="location-preview-thumbs__slide swiper-slide">
+								<img src="img/sliders-location/peremohy/peremohy-01.webp" alt="Інтер'єр салону на проспекті Перемоги, 63">
+							</div>
+							<div class="location-preview-thumbs__slide swiper-slide">
+								<img src="img/sliders-location/peremohy/peremohy-02.webp" alt="Інтер'єр салону на проспекті Перемоги, 63">
+							</div>
+							<div class="location-preview-thumbs__slide swiper-slide">
+								<img src="img/sliders-location/peremohy/peremohy-03.webp" alt="Інтер'єр салону на проспекті Перемоги, 63">
+							</div>
+							<div class="location-preview-thumbs__slide swiper-slide">
+								<img src="img/sliders-location/peremohy/peremohy-04.webp" alt="Інтер'єр салону на проспекті Перемоги, 63">
+							</div>
+							<div class="location-preview-thumbs__slide swiper-slide">
+								<img src="img/sliders-location/peremohy/peremohy-05.webp" alt="Інтер'єр салону на проспекті Перемоги, 63">
+							</div>
+							<div class="location-preview-thumbs__slide swiper-slide">
+								<img src="img/sliders-location/peremohy/peremohy-06.webp" alt="Інтер'єр салону на проспекті Перемоги, 63">
+							</div>
+						</div>
+					</div>
+					<button data-popup="#popup" type="submit" class="form__button button button--send">Відправити</button>
+					<div class="location-preview__video">
+						<div class="location-preview__title--video">Відеоогляд салону</div>
+						<div class="location-preview__body">
+							<iframe width="560" height="315" src="https://www.youtube.com/embed/blnDYe7f0BE?si=7XL8BkoaaziAY58a" title="location-preview__player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+							</iframe>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer__content">
+					<div class="footer__body">
+						<ul class="footer__list list-footer">
+							<li class="list-footer__item">
+								<h2 class="list-footer__title--main">КОНТАКТИ</h2>
+							</li>
+							<li class="list-footer__item">
+								<div class="list-footer__title">Для дзвінків та месенджерів</div>
+								<div class="list-footer__body">
+									<div class="list-footer__icon">
+										<img src="img/icons/phone.svg" alt="Phone icon">
+									</div>
+									<a href="tel:+380502250192" class="list-footer__text">
+										+38 050 255 01 92
+									</a>
+								</div>
+							</li>
+							<li class="list-footer__item">
+								<div class="list-footer__title">Електронна адреса</div>
+								<div class="list-footer__body">
+									<div class="list-footer__icon">
+										<img src="img/icons/email.svg" alt="Phone email">
+									</div>
+									<a href="mailto:gobeauty.zp@gmail.com" class="list-footer__text">
+										gobeauty.zp@gmail.com
+									</a>
+								</div>
+							</li>
+							<li class="list-footer__item">
+								<div class="list-footer__title">Адреса</div>
+								<div class="list-footer__body">
+									<div class="list-footer__icon">
+										<img src="img/icons/place_big.svg" alt="Phone icon">
+									</div>
+									<a href="https://maps.app.goo.gl/svr4gQ2pwGifSKsM6" target="_blank" class="list-footer__text">
+										Україна, м.Запоріжжя, 69000
+									</a>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div class="footer__form">
+						<form action="files/sendmail/sendmail.php" method="POST" class="contacts__form">
+							<h2 class="form__title">ЗАЛИШИТИ ЗАЯВКУ</h2>
+							<div class="form__item">
+								<input data-required autocomplete="name" type="text" name="Ім'я" data-error="Введіть ім'я" data-required placeholder="Ім'я" class="form__input">
+							</div>
+							<div class="form__item">
+								<input autocomplete="tel" type="tel" name="phone" data-error="Error" data-required="Phone" inputmode="numeric" placeholder="+38 (__) __ _ _" class="form__input">
+							</div>
+							<div class="form__item">
+								<select name="location" required class="form__select">
+									<option value="" disabled selected>Локація салону</option>
+									<option value="peremohy">пр-т Перемоги, 63</option>
+									<option value="polyakova">вул. Полякова, 21</option>
+									<option value="patriotychna">вул. Патріотична, 54</option>
+								</select>
+							</div>
+							<button type="submit" class="form__button button button--send">
+								Відправити
+							</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<div class="footer__social social-footer">
+			<div class="social-footer__body">
+				<a class="social-footer__link" href="https://www.instagram.com/gobeautystudios_ua/">
+					<img src="img/icons/instagram-color.svg" alt="Icon instagram">
+				</a>
+				<a class="social-footer__link" href="https://www.youtube.com/channel/UCEs1qR95PPUQndYF046D5hQ">
+					<img src="img/icons/youtube-color.svg" alt="Icon youtube">
+				</a>
+			</div>
+		</div>
+	</div>
+	<script src="js/app.min.js?_v=20250808225344"></script>
+	<div id="popup" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close">
+					<svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path opacity="0.950056" d="M1.73333 1.48883L21.5469 21.0288" stroke="#979797" stroke-linecap="square" />
+						<path opacity="0.950056" d="M21.2667 1.48883L1.45309 21.0288" stroke="#979797" stroke-linecap="square" />
+					</svg>
+				</button>
+				<div class="popup__text">
+					<form action="files/sendmail/sendmail.php" method="POST" class="contacts__form form--popup">
+						<h2 class="form__title">ЗАЛИШИТИ ЗАЯВКУ</h2>
+						<div class="form__item">
+							<input data-required autocomplete="name" type="text" name="Ім'я" data-error="Введіть ім'я" data-required placeholder="Ім'я" class="form__input">
+						</div>
+						<div class="form__item">
+							<input autocomplete="tel" type="tel" name="phone" data-error="Error" data-required="Phone" inputmode="numeric" placeholder="+38 (__) __ _ _" class="form__input">
+						</div>
+						<div class="form__item">
+							<select name="location" required class="form__select">
+								<option value="" disabled selected>Локація салону</option>
+								<option value="peremohy">пр-т Перемоги, 63</option>
+								<option value="polyakova">вул. Полякова, 21</option>
+								<option value="patriotychna">вул. Патріотична, 54</option>
+							</select>
+						</div>
+						<div class="form__item">
+							<button type="submit" class="form__button button button--send">
+								Відправити
+							</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>
