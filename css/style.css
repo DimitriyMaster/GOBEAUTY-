@@ -750,7 +750,7 @@ body::after {
 }
 .location-preview__container {
   width: 100%;
-  max-width: 75rem
+  max-width: 65.9375rem
 }
 .location-preview__header {
   text-align: center;
@@ -797,11 +797,12 @@ body::after {
   color: #202020;
   font-family: "Open+Sans";
   font-weight: 500;
-  line-height: 1.2727272727
+  line-height: 1.2727272727;
+  text-decoration: underline
 }
 .location-preview__wrapper {
   height: 100%;
-  max-width: 50.9375rem
+  max-width: 63.75rem
 }
 .location-preview__slide {
   display: flex;
@@ -815,9 +816,10 @@ body::after {
   display: block;
   width: 63.75rem;
   height: 38.75rem;
-  -o-object-fit: cover;
-  object-fit: cover;
-  border-radius: .3125rem
+  -o-object-fit: contain;
+  object-fit: contain;
+  border-radius: inherit;
+  background: linear-gradient(135deg,#f8f9fa,#e9ecef)
 }
 .location-preview__video {
   display: flex;
@@ -855,21 +857,28 @@ body::after {
   position: relative;
   overflow: visible;
   width: 100%;
-  height: 43.125rem;
-  max-width: 50.9375rem;
+  max-width: 63.75rem;
+  aspect-ratio: 1020/620;
   border-radius: .625rem;
-  margin-bottom: .9375rem
+  margin: 0 auto .9375rem auto
 }
 .location-preview-main__slider {
   position: relative;
   width: 100%;
   height: 100%;
-  overflow: hidden
+  overflow: hidden;
+  border-radius: 1.25rem;
+  box-shadow: inset 0 0 10px rgba(0,0,0,.45);
+  background-color: rgba(153,73,146,.0509803922)
 }
 .location-preview-main__slider img {
   width: 100%;
   -o-object-fit: cover;
-  object-fit: cover
+  object-fit: cover;
+  background: linear-gradient(135deg,#f8f9fa,#e9ecef);
+  transition: -webkit-transform .3s ease;
+  transition: transform .3s ease;
+  transition: transform .3s ease,-webkit-transform .3s ease
 }
 .swiper {
   width: 100%;
@@ -1088,10 +1097,10 @@ body::after {
     font-size: 2rem
   }
   .page__location-previwe {
-    padding-top: 3.125rem
+    padding-top: 2.5rem
   }
   .page__location-previwe {
-    padding-bottom: 3.125rem
+    padding-bottom: 2.5rem
   }
   .location-preview__title {
     font-size: 2.25rem
@@ -1211,10 +1220,10 @@ body::after {
     font-size: 1.125rem
   }
   .page__location-previwe {
-    padding-top: 1.875rem
+    padding-top: .9375rem
   }
   .page__location-previwe {
-    padding-bottom: 1.875rem
+    padding-bottom: .9375rem
   }
   .location-preview__title {
     font-size: 1.5625rem
@@ -1527,10 +1536,10 @@ body::after {
     font-size: clamp(1.125rem ,.8815217391rem + 1.2173913043vw ,2rem)
   }
   .page__location-previwe {
-    padding-top: clamp(1.875rem ,1.527173913rem + 1.7391304348vw ,3.125rem)
+    padding-top: clamp(.9375rem ,.5027173913rem + 2.1739130435vw ,2.5rem)
   }
   .page__location-previwe {
-    padding-bottom: clamp(1.875rem ,1.527173913rem + 1.7391304348vw ,3.125rem)
+    padding-bottom: clamp(.9375rem ,.5027173913rem + 2.1739130435vw ,2.5rem)
   }
   .location-preview__title {
     font-size: clamp(1.5625rem ,1.3711956522rem + .9565217391vw ,2.25rem)
@@ -1614,6 +1623,10 @@ body::after {
   }
   .location-preview__body:hover {
     box-shadow: 0 .625rem 3.125rem rgba(0,0,0,.4)
+  }
+  .location-preview-main__slider img:hover {
+    -webkit-transform: scale(1.03);
+    transform: scale(1.03)
   }
   .swiper-button-next img:hover,
   .swiper-button-prev img:hover {
